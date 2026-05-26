@@ -27,23 +27,18 @@ The analysis answers six connected sub-questions:
 
 ## Headline findings
 ```
-NHS_Project/
-├── README.md
-├── nhs_workforce.sql
-├── schema_erd.png
-├── queries/
-│   ├── 01_kpi_overview.sql
-│   ├── 02_turnover_by_role.sql
-│   ├── 03_leaver_reasons.sql
-│   ├── 04_absence_compare_leavers_stayers.sql
-│   ├── 05_training_compliance.sql
-│   ├── 06_vacancy_fill_rate.sql
-│   ├── 07_running_total_monthly_leavers.sql
-│   ├── 08_pay_band_attrition_cte.sql
-│   ├── 09_department_cost_of_churn.sql
-│   └── 10_executive_summary.sql
-└── screenshots/
-```
+
+| Metric | Value |
+|---|---|
+| Active staff (current) | **2,758** |
+| Leavers in last 12 months | **146** |
+| Annual turnover rate | **5.3%** |
+| Top leaver reason | Resignation — Work-Life Balance (20% of leavers) |
+| Highest-attrition role category | AHP (55 leavers), narrowly ahead of Nursing (54) |
+| Top department for leavers | Patient Records (21 leavers) |
+| Estimated replacement cost (12mo) | **£1.27 million** |
+| Mandatory training compliance (overall) | **60.0%** |
+
 
 > The training compliance figure is a flag — NHS expected standards typically sit above 85%. This dataset surfaces it as a candidate operational risk that an analyst would escalate.
 
@@ -80,9 +75,24 @@ The data is **synthetic but realistic**: NHS Agenda for Change pay bands use act
 ---
 
 ## Repository contents
-
-
-NHS_Project/ ├── README.md <- this file ├── nhs_workforce.sql <- schema + sample data (run once to load) ├── schema_erd.png <- entity-relationship diagram ├── queries/ │ ├── 01_kpi_overview.sql │ ├── 02_turnover_by_role.sql │ ├── 03_leaver_reasons.sql │ ├── 04_absence_compare_leavers_stayers.sql │ ├── 05_training_compliance.sql │ ├── 06_vacancy_fill_rate.sql │ ├── 07_running_total_monthly_leavers.sql │ ├── 08_pay_band_attrition_cte.sql │ ├── 09_department_cost_of_churn.sql │ └── 10_executive_summary.sql └── screenshots/ └── (output captures from pgAdmin)
+```
+NHS_Project/
+├── README.md
+├── nhs_workforce.sql
+├── schema_erd.png
+├── queries/
+│   ├── 01_kpi_overview.sql
+│   ├── 02_turnover_by_role.sql
+│   ├── 03_leaver_reasons.sql
+│   ├── 04_absence_compare_leavers_stayers.sql
+│   ├── 05_training_compliance.sql
+│   ├── 06_vacancy_fill_rate.sql
+│   ├── 07_running_total_monthly_leavers.sql
+│   ├── 08_pay_band_attrition_cte.sql
+│   ├── 09_department_cost_of_churn.sql
+│   └── 10_executive_summary.sql
+└── screenshots/
+```
 
 ---
 
